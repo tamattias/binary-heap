@@ -42,6 +42,7 @@ void heap_init(heap_t *h, int capacity)
 void heap_free(heap_t *h)
 {
 	free(h->a);
+	h->a = 0;
 	h->n = 0;
 	h->capacity = 0;
 }
